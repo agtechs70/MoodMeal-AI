@@ -28,7 +28,10 @@ if st.session_state.page == "home":
     col1, col2, col3 = st.columns([1, 6, 1])
 
     with col2:
-         st.image("assets/logo.png", width=250)
+        from PIL import Image
+
+logo = Image.open("assets/logo.png")
+st.image(logo, width=250)
 
     st.markdown(
             """
