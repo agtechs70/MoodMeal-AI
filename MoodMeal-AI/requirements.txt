@@ -1,0 +1,7 @@
+streamlit
+google-generativeai
+langchain
+langgraph
+python-dotenv
+pydantic
+secure-smtplib
