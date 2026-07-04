@@ -29,29 +29,22 @@ if st.session_state.page == "home":
 
     col1, col2, col3 = st.columns([1, 6, 1])
 
-   with col2:
+    with col2:
 
-    BASE_DIR = Path(__file__).resolve().parent
+        BASE_DIR = Path(__file__).resolve().parent
 
-    logo_path = BASE_DIR / "assets" / "logo.png"
+        logo_path = BASE_DIR / "assets" / "logo.png"
 
-    logo = Image.open(logo_path)
-
-    st.image(logo, width=250)
-       
-        from PIL import Image
-
-        logo = Image.open("assets/logo.png")
-        st.image(logo, width=250)
+        st.image(str(logo_path), width=250)
 
     st.markdown(
-            """
-            <h1 style='text-align:center; margin-top:-95px; margin-left:90px;'>
-            MoodMeal <span style='color:#FF6B6B;'>AI</span>
-            </h1>
-            """,
-            unsafe_allow_html=True
-        )
+        """
+        <h1 style='text-align:center; margin-top:-95px; margin-left:90px;'>
+        MoodMeal <span style='color:#FF6B6B;'>AI</span>
+        </h1>
+        """,
+        unsafe_allow_html=True
+    )
     st.markdown(
             """
             <h3 style='text-align:center;color:#FF7A59;'>
