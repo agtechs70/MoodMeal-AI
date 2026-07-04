@@ -1,5 +1,7 @@
 import streamlit as st
 from pathlib import Path
+from PIL import Image
+
 from app.cook_page import show_cook_page
 from app.order_page import show_order_page
 st.set_page_config(
@@ -27,7 +29,16 @@ if st.session_state.page == "home":
 
     col1, col2, col3 = st.columns([1, 6, 1])
 
-    with col2:
+   with col2:
+
+    BASE_DIR = Path(__file__).resolve().parent
+
+    logo_path = BASE_DIR / "assets" / "logo.png"
+
+    logo = Image.open(logo_path)
+
+    st.image(logo, width=250)
+       
         from PIL import Image
 
         logo = Image.open("assets/logo.png")
