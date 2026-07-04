@@ -1,7 +1,11 @@
 streamlit
 google-generativeai
+python-dotenv
+reportlab
+Pillow
+pandas
+pywhatkit
 langchain
 langgraph
-python-dotenv
 pydantic
 secure-smtplib
